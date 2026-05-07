@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="范君然的个人主页，展示个人介绍、经历成就、兴趣标签与联系方式。"
+      data-meta="description"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="范君然 | 个人主页" data-meta="ogTitle">
+    <meta
+      property="og:description"
+      content="一个持续探索技术、表达与生活美学的人。"
+      data-meta="ogDescription"
+    >
+    <meta property="og:image" content="./share-card.png" data-meta="ogImage">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="范君然 | 个人主页" data-meta="twitterTitle">
+    <meta
+      name="twitter:description"
+      content="一个持续探索技术、表达与生活美学的人。"
+      data-meta="twitterDescription"
+    >
+    <title>范君然 | 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800&family=Inter:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" aria-label="页面导航">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true" data-field="initial">范</span>
+        <span data-field="name">范君然</span>
+      </a>
+      <nav class="nav-links" aria-label="主要导航">
+        <a href="#about">关于</a>
+        <a href="#achievements">成就</a>
+        <a href="#timeline">经历</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Personal Portfolio</p>
+          <h1 id="hero-title" data-field="name">范君然</h1>
+          <p class="tagline" data-field="tagline">
+            一个持续探索技术、表达与生活美学的人
+          </p>
+          <p class="hero-summary" data-field="summary">
+            喜欢把复杂的问题整理成清晰的路径，也珍惜那些让生活变得有纹理的小事。
+          </p>
+
+          <div class="tag-list" data-list="tags" aria-label="个人标签"></div>
+
+          <div class="hero-actions" aria-label="主页操作">
+            <button class="button primary" type="button" data-copy-intro>
+              <span aria-hidden="true">ID</span>
+              复制个人介绍
+            </button>
+            <button class="button secondary" type="button" data-open-share>
+              <span aria-hidden="true">UP</span>
+              打开分享面板
+            </button>
+            <a class="button ghost" href="#contact">
+              <span aria-hidden="true">@</span>
+              联系我
+            </a>
+          </div>
+        </div>
+
+        <aside class="portfolio-card reveal" aria-label="个人作品集视觉卡片">
+          <div class="portfolio-topline">
+            <span>Quick Read</span>
+            <strong data-field="quickLabel">清醒、好奇、行动派</strong>
+          </div>
+          <div class="portfolio-mark" aria-hidden="true">
+            <span data-field="initial">范</span>
+          </div>
+          <div class="portfolio-note">
+            <p>当前关键词</p>
+            <div data-list="featuredTags"></div>
+          </div>
+          <div class="portfolio-summary" data-list="miniStats"></div>
+        </aside>
+      </section>
+
+      <section class="section-shell stats-band reveal" aria-labelledby="stats-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Snapshot</p>
+          <h2 id="stats-title">亮点概览</h2>
+        </div>
+        <div class="stats-grid" data-list="stats"></div>
+      </section>
+
+      <section class="section-shell content-band reveal" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2 id="about-title">关于我</h2>
+          </div>
+          <p class="section-note">适合作为初次认识时的快速上下文。</p>
+        </div>
+        <div class="about-grid" data-list="bio"></div>
+      </section>
+
+      <section
+        class="section-shell content-band reveal"
+        id="achievements"
+        aria-labelledby="achievements-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="achievements-title">成就精选</h2>
+          </div>
+          <p class="section-note">先以结构化占位呈现，后续可替换为真实项目、竞赛或经历。</p>
+        </div>
+        <div class="work-grid" data-list="achievements"></div>
+      </section>
+
+      <section class="section-shell content-band reveal" id="timeline" aria-labelledby="timeline-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2 id="timeline-title">经历时间线</h2>
+          </div>
+          <p class="section-note">用来快速展示成长路径和当前投入方向。</p>
+        </div>
+        <div class="timeline" data-list="timeline"></div>
+      </section>
+
+      <section class="section-shell content-band reveal" id="hobbies" aria-labelledby="hobbies-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Signals</p>
+            <h2 id="hobbies-title">爱好标签</h2>
+          </div>
+          <p class="section-note">保留一点生活感，让主页不止是简历。</p>
+        </div>
+        <div class="hobby-grid" data-list="hobbies"></div>
+      </section>
+
+      <section class="section-shell contact-band reveal" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">保持联系</h2>
+          <p data-field="contactNote">如果你想聊合作、灵感或一次认真又轻松的交流，可以从这里找到我。</p>
+        </div>
+        <div class="contact-list" data-list="contacts"></div>
+      </section>
+    </main>
+
+    <section class="share-panel" aria-label="分享面板" data-share-panel hidden>
+      <div class="share-backdrop" data-close-share></div>
+      <div class="share-sheet" role="dialog" aria-modal="true" aria-labelledby="share-title">
+        <div class="share-heading">
+          <div>
+            <p class="eyebrow">Share</p>
+            <h2 id="share-title">分享个人主页</h2>
+          </div>
+          <button class="icon-button" type="button" aria-label="关闭分享面板" data-close-share>X</button>
+        </div>
+        <div class="share-actions">
+          <button type="button" data-copy-link>复制主页链接</button>
+          <button type="button" data-copy-share-intro>复制短版介绍</button>
+          <button type="button" data-copy-contact>复制联系方式</button>
+          <button type="button" data-generate-card>生成名片图</button>
+        </div>
+        <div class="canvas-wrap">
+          <canvas width="1080" height="1440" data-share-canvas aria-label="个人名片图预览"></canvas>
+        </div>
+        <a class="download-link" data-download-card href="#" download="fan-junran-card.png" hidden>
+          保存名片图
+        </a>
+      </div>
+    </section>
+
+    <div class="toast" role="status" aria-live="polite" data-toast>已复制</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
